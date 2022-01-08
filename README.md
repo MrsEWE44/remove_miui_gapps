@@ -3,3 +3,4 @@ This a remove miui12 google apps scripts, need unlock system partition read-only
 
 support adb shell and terminal 
 
+I test in redmi note 9 4g , it's work ok !
