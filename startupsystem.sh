@@ -20,11 +20,12 @@ RUI_APP_3=("com.coloros.backuprestore" "com.heytap.pictorial" "com.heytap.cloud"
 MIUI_EU_APP=("com.google.android.googlequicksearchbox" "com.miui.misound" "com.google.android.soundpicker" "pl.zdunex25.updater" "com.xiaomi.payment" "com.android.email" "com.miui.bugreport" "com.android.browser" "com.miui.cloudbackup" "com.xiaomi.finddevice" "com.miui.miservice" "com.miui.fm" "com.google.android.feedback" "cn.wps.moffice_eng.xiaomi.lite" "com.miui.huanji" "com.xiaomi.mi_connect_service" "com.miui.newmidrive" "com.google.android.apps.cloudprint" "com.miui.videoplayer" "com.google.ar.lens" "com.google.android.syncadapters.contacts" "com.google.android.partnersetup" "com.google.android.syncadapters.calendar" "com.google.android.tts" "com.google.android.gms.location.history" "com.google.android.onetimeinitializer" "com.android.vending")
 
 
-RUI_SYS_APP_PACKAGENAME=("com.coloros.bootreg" "com.coloros.regservice" "com.coloros.activation" "com.coloros.pictorial" "com.oppo.usercenter" "com.nearme.instant.platform" "com.nearme.romupdate" "com.nearme.statistics.rom" "com.coloros.phonemanager" "com.coloros.assistantscreen" "com.coloros.backuprestore" "com.coloros.backuprestore.remoteservice" "com.coloros.childrenspace" "com.coloros.cloud" "com.coloros.directui" "com.color.eyeprotect" "com.color.uiengine" "com.mobiletools.systemhelper" "com.oppo.ctautoregist" "com.coloros.feedback" "com.coloros.encryption" "com.realme.findphone.client2" "com.coloros.gamespace" "com.coloros.healthcheck" "com.iflytek.speechsuite" "com.nearme.instant.platform" "com.oppo.market" "com.nearme.atlas" "com.oppo.usercenter" "com.coloros.ocrscanner" "com.coloros.ocrservice" "com.oppo.aod" "com.oppo.atlas" "com.nearme.statistics.rom" "com.dropboxchmod" "com.oppo.engineermode" "com.oppo.logkit" "com.coloros.oppomultiapp" "com.coloros.operationManual" "com.coloros.activation" "com.coloros.translate.engine" "com.coloros.wallet" "com.coloros.oshare" "com.oppo.ota" "com.oppo.otaui" "com.coloros.remoteguardservice" "com.coloros.sau" "com.coloros.sauhelper" "com.nearme.browser" "com.google.android.configupdater" "com.coloros.findmyphone" "com.oppo.quicksearchbox" "com.oppo.music" "com.coloros.speechassist" "com.coloros.speechassist.engine" "com.coloros.sceneservice" "com.coloros.smartdrive" "com.coloros.smartlock" "com.coloros.video")
+RUI_SYS_APP_PACKAGENAME=("com.nearme.gamecenter" "com.heytap.quicksearchbox" "com.opos.ads" "com.coloros.digitalwellbeing" "com.realme.movieshot" "com.oplus.onetrace" "com.heytap.openid" "com.finshell.wallet" "com.heytap.music" "com.heytap.yoli" "com.coloros.translate.engine" "com.heytap.speechassist" "com.heytap.browser" "com.coloros.wifisecuredetect" "com.heytap.synergy" "com.heytap.pictorial" "com.heytap.cloud" "com.oppo.atlas" "com.coloros.healthcheck" "com.realme.wellbeing" "com.coloros.systemclone" "com.oplus.oscenter" "com.heytap.datamigration" "com.heytap.linker" "com.heytap.usercenter" "com.heytap.market" "com.coloros.apprecover" "com.coloros.safecenter" "com.coloros.bootreg" "com.coloros.regservice" "com.coloros.activation" "com.coloros.pictorial" "com.oppo.usercenter" "com.nearme.instant.platform" "com.nearme.romupdate" "com.nearme.statistics.rom" "com.coloros.phonemanager" "com.coloros.assistantscreen" "com.coloros.backuprestore" "com.coloros.backuprestore.remoteservice" "com.coloros.childrenspace" "com.coloros.cloud" "com.coloros.directui" "com.color.eyeprotect" "com.color.uiengine" "com.mobiletools.systemhelper" "com.oppo.ctautoregist" "com.coloros.feedback" "com.coloros.encryption" "com.realme.findphone.client2" "com.coloros.gamespace" "com.coloros.healthcheck" "com.iflytek.speechsuite" "com.nearme.instant.platform" "com.oppo.market" "com.nearme.atlas" "com.oppo.usercenter" "com.coloros.ocrscanner" "com.coloros.ocrservice" "com.oppo.aod" "com.oppo.atlas" "com.nearme.statistics.rom" "com.dropboxchmod" "com.oppo.engineermode" "com.oppo.logkit" "com.coloros.oppomultiapp" "com.coloros.operationManual" "com.coloros.activation" "com.coloros.translate.engine" "com.coloros.wallet" "com.coloros.oshare" "com.oppo.ota" "com.oppo.otaui" "com.coloros.remoteguardservice" "com.coloros.sau" "com.coloros.sauhelper" "com.nearme.browser" "com.google.android.configupdater" "com.coloros.findmyphone" "com.oppo.quicksearchbox" "com.oppo.music" "com.coloros.speechassist" "com.coloros.speechassist.engine" "com.coloros.sceneservice" "com.coloros.smartdrive" "com.coloros.smartlock" "com.coloros.video")
 
 RUI_SYS_APP=("AssistantScreen" "BackupAndRestore" "BackupRestoreRemoteService" "BookmarkProvider" "BTtestmode" "BuiltlnPrintService" "CloudService" "ColorDirectService" "ColorDirectUI2" "ColorUIEngine" "com.mobiletools.systemhelper-19771" "CTAutoRegist" "Feedback" "FindMyPhoneClient2" "FloatAssistant" "GameSpace" "GoogleContactsSyncAdapter" "GooglePrintRecommendationService" "HealthCheck" "IFlySpeechService" "Instant" "InstantLocalService" "KeKeMarket" "KeKePay" "KeKeUserCenter" "OcrScanner2" "OppoAod" "OppoAtlasService" "OppoDropboxChmodService" "OppoEngineerMode" "OppoLFEHer" "OppoLogKit" "OppoMultiApp" "OppoOperationManual" "OppoPhoneActivation" "OppoTranslationService" "OppoTZUpdate" "OppoWallet" "OShare" "OTA" "OTAUI" "RegService" "RemoteGuardService" "RomUpdate" "SAUHelper" "SecurePay" "SupportServices" "SystemAppUpdateService")
-RUI_SYS_PRIV_APP=("Browser" "ConfigUpdater" "FindMyPhone" "GlobalSearch" "GmsCore" "GoogleBackupTransport" "GoogleOneTimeInitializer" "GooglePartnerSetup" "GooglePlayServicesUpdater" "GoogleServicesFramework" "OppoBootReg" "OppoMusic" "OppoSpeechAssist" "OppoSpeechService" "SceneService" "seccamservice" "SmartDrive" "SmartLock" "SOSHelper" "VideoGallery")
-
+RUI_SYS_PRIV_APP=("HeyTapUserCenter" "HeyTapSpeechService" "HeyTapSpeechAssist" "Browser" "ConfigUpdater" "FindMyPhone" "GlobalSearch" "GmsCore" "GoogleBackupTransport" "GoogleOneTimeInitializer" "GooglePartnerSetup" "GooglePlayServicesUpdater" "GoogleServicesFramework" "OppoBootReg" "OppoMusic" "OppoSpeechAssist" "OppoSpeechService" "SceneService" "seccamservice" "SmartDrive" "SmartLock" "SOSHelper" "VideoGallery")
+RUI_SYS_PRODUCT_PRIV_APP=("ConfigUpdater" "GmsCore" "GoogleBackupTransport" "GoogleOneTimeInitializer" "GooglePartnerSetup" "GooglePlayServicesUpdater" "GoogleServicesFramework")
+RUI_SYS_PRODUCT_APP=("GoogleContactsSyncAdapter")
 
 MIUI_SYS_APP=("CloudService" "com.xiaomi.macro" "HybridAccessory" "HybridPlatform" "Joyose" "mab" "mi_connect_service" "MiCloudSync" "MiLinkService2" "MiuiBugReport" "MiPlayClient" "MiuiAccessibility" "MiuiPrintSpoolerBeta" "MiuiSuperMarket" "MSA" "Music" "NextPay" "PaymentService" "TSMClient" "Updater" "VoiceAssist" "UPTsmService" "XiaomiAccount" "XMCloudEngine" "XMSFKeeper" "YouDaoEngine" "XMSFKeeper")
 MIUI_SYS_DATA_APP=("Email" "GameCenter" "Huanji" "MiDrive" "MiFinance" "MiLiveAssistant" "Mipay" "MiRadio" "MiShop" "MiuiScanner" "NewHome" "SmartTravel" "VipAccount" "VirtualSim" "XiaoAiSpeechEngine" "Youpin")
@@ -74,6 +75,8 @@ disable_app_core(){
 arr=$1
 for pp in ${arr[*]}
 do
+am force-stop $pp
+pm clear $pp
 pm disable-user $pp
 done
 }
@@ -100,6 +103,8 @@ uninstall_app_core(){
 arr=$1
 for pp in ${arr[*]}
 do
+am force-stop $pp
+pm clear $pp
 pm uninstall --user 0 $pp
 done
 }
@@ -122,6 +127,8 @@ remove_sys_app_rui(){
 mount_rw_sys
 remove_sys_app_core "$SYSTEM_APP" "${RUI_SYS_APP[*]}"
 remove_sys_app_core "$SYSTEM_PRIV_APP" "${RUI_SYS_PRIV_APP[*]}"
+remove_sys_app_core "$SYSTEM_PRODUCT_PRIV_APP" "${RUI_SYS_PRODUCT_PRIV_APP[*]}"
+remove_sys_app_core "$SYSTEM_PRODUCT_APP" "${RUI_SYS_PRODUCT_APP[*]}"
 mount_ro_sys
 remove_cust_app
 remove_app_3
@@ -253,7 +260,6 @@ remove_sys_app_miui_global
 else
 echo "no support $UID"
 fi
-
 }
 
 remove_app_miui_eu(){
@@ -265,6 +271,7 @@ remove_sys_app_miui_eu
 else
 clear_app_miui_eu
 disable_app_miui_eu
+uninstall_app_miui_eu
 fi
 }
 
@@ -277,6 +284,7 @@ remove_sys_app_miui
 else
 clear_app_miui
 disable_app_miui
+uninstall_app_miui
 fi
 }
 
@@ -290,6 +298,25 @@ else
 clear_app_rui
 disable_app_rui
 uninstall_app_rui
+fi
+pm clear com.oppo.launcher
+}
+
+
+fix_rui_menu(){
+if [ "$UID" == "0" ]
+then
+echo "not support $UID"
+exit 1;
+else
+echo -ne "1.fix safecenter\ninput : "
+read xx
+case $xx in
+1)
+pm enable com.coloros.safecenter
+exit 0;;
+*)remove_app_menu;;
+esac
 fi
 }
 
@@ -362,7 +389,7 @@ esac
 }
 
 main(){
-echo -ne "1.remove app\n2.stop app\n3.disable app\ninput : "
+echo -ne "1.remove app\n2.stop app\n3.disable app\n4.fix app\ninput : "
 read xxx
 case $xxx in
 1)
@@ -373,6 +400,9 @@ stop_app_menu
 exit 0;;
 3)
 disable_app_menu
+exit 0;;
+4)
+fix_rui_menu
 exit 0;;
 *)main;;
 esac
