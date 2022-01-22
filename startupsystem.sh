@@ -35,10 +35,17 @@ MIUI_SYS_EXT_APP=("FM")
 MIUI_VENDOR_APP=("Joyose")
 MIUI_VENDOR_DATA_APP=("MiGalleryLockscreen" "SmartHome" "wps-lite" "XMRemoteController" "BaidulME" "com.iflytek.inputmethod.miui")
 
+MIUI_13_SYS_APP=("AiAsstVision" "MSA" "AnalyticsCore" "AutoTest" "BookmarkProvider" "CloudService" "com.xiaomi.macro" "FidoAuthen" "FidoClient" "HybridAccessory" "HybridPlatform" "Joyose" "mab" "MiCloudSync" "MiConnectService" "MiLink" "MiPlayClient" "MiuiAccessibility" "MiuiAudioMonitor" "MiuiBugReport" "MiuiContentCatcher" "MIUIgreenguard" "MiuiPrintSpoolerBeta" "MIUISuperMarket" "MIUITouchAssistant" "NextPay" "PaymentService" "TSMClient" "Updater" "UPTsmService" "VoiceAssist" "VoiceTrigger" "VsimCore" "XiaomiAccount" "XMCloudEngine" "XMSFKeeperAll" "YouDaoEngine")
+MIUI_13_SYS_DATA_APP=("Health" "MiDrive" "MIFinance" "MIGalleryLockscreen" "MiLiveAssistant" "MIpay" "MIRadio" "MiShop" "MIUIDuokanReader" "MIUIEmail" "MIUIGameCenter" "MIUIHuanji" "MIUINewHome" "MIUIScanner" "MIUINotes" "MIUISmartTravel" "MIUIVipAccount" "MIUIVirtualSim" "MIUIXiaoAiSpeechEngine" "MIUIYoupin" "ThirdAppAssistant")
+MIUI_13_SYS_PRIV_APP=("Backup" "BackupRestoreConfirmation" "BuiltlnPrintService" "CloudBackup" "CloudServiceSysbase" "FindDevice" "MiGameCenterSDKService" "MiRcs" "MIService" "MIUIBrowser" "MIUIContentExtension" "MIUIMusic" "MIUIPersonalAssistant" "MIUIQuickSearchBox" "MIUIVideo" "MIUIVipService")
+MIUI_13_PRODUCT_APP=("aiasst_service")
+
+MIUI_13_PACKAGE=("com.xiaomi.aiasst_service" "com.duokan.reader" "com.android.backupconfirm" "com.miui.backup" "com.miui.cloudservice.sysbase" "com.android.bips" "com.xiaomi.finddevice" "com.xiaomi.mircs" "com.miui.miservice" "com.miui.contentextension" "com.miui.player" "com.miui.personalassistant" "com.miui.video" "com.miui.vipservice" "com.android.quicksearchbox" "com.android.browser" "com.xiaomi.gamecenter.sdk.service" "com.miui.cloudbackup" "com.xiaomi.shop" "com.miui.fm" "com.mipay.wallet" "com.mi.liveassistant" "com.mfashiongallery.emag" "com.xiaomi.jr" "com.miui.newmidrive" "com.mi.health" "com.miui.thirdappassistant" "com.xiaomi.youpin" "com.xiaomi.mibrain.speech" "com.miui.virtualsim" "com.xiaomi.vipaccount" "com.miui.smarttravel" "com.xiaomi.scanner" "com.miui.notes" "com.miui.newhome" "com.miui.huanji" "com.xiaomi.gamecenter" "com.android.email" "com.miui.hybrid" "com.miui.hybrid.accessory" "com.fido.xiaomi.uafclient" "com.fido.asm" "com.xiaomi.macro" "com.miui.cloudservice" "com.mi.AutoTest" "com.miui.analytics" "com.xiaomi.aiasst.vision" "com.miui.audiomonitor" "com.miui.accessibility" "com.xiaomi.mipay_client" "com.milink.service" "com.xiaomi.mi_connect_service" "com.miui.micloudsync" "com.xiaomi.ab" "com.xiaomi.joyose" "org.ifaa.aidl.manager" "com.xiaomi.market" "com.android.printspooler" "com.miui.greenguard" "com.miui.contentcatcher" "com.miui.bugreport" "com.miui.nextpay" "com.miui.systemAdSolution" "com.miui.tsmclient" "com.miui.translationservice" "com.xiaomi.payment" "com.android.updater" "com.miui.voicetrigger" "com.miui.voiceassist" "com.unionpay.tsmservice.mi" "com.miui.vsimcore" "com.miui.translation.youdao" "com.xiaomi.xmsfkeeper" "com.miui.translation.xmcloud" "com.xiaomi.account")
+
 MIUI_EU_SYS_APP=("BookmarkProvider" "CloudService" "com.xiaomi.macro"  "GooglePrintRecommendationService" "Email" "Health" "Joyose" "Lens" "LiveWallpapersPicker" "mi_connect_service" "MiuiBugReport" "MiCloudSync" "MiDrive" "MiGalleryLockscreen" "MiLinkService" "MiPlayClient" "MiRadio" "MiuiVideoGlobal" "NextPay" "Notes" "PaymentService" "PrintSpooler"  "Updater" "XiaomiAccount" "wps-lite" "XMSFKeeper")
 MIUI_EU_SYS_PRIV_APP=("Backup" "BackupRestoreConfirmation" "BuiltlnPrintService" "CloudBackup" "CloudServiceSysbase" "DownloadProvider" "DownloadProviderUi" "FindDevice" "MiBrowserGlobal" "MiMover" "MiService" "MiuiScanner" "Music" "MusicFX" "PersonalAssistant" "QuickSearchBox")
 MIUI_EU_SYS_PRODUCT_APP=("GoogleCalendarSyncAdapter" "GoogleContactsSyncAdapter" "GoogleLocationHistory" "GoogleTTS")
-MIUI_EU_SYS_PRODUCT_PRIV_APP=("AndroidAutoSub" "CarrierServices" "ConfigUpdater" "GmsCore" "GooglePartnerSetup" "GoogleRestore" "Phonesky" "SetupWizard" "Velvet")
+MIUI_EU_SYS_PRODUCT_PRIV_APP=("AndroidAutoSub" "CarrierServices" "GoogleServicesFramework" "ConfigUpdater" "GmsCore" "GooglePartnerSetup" "GoogleRestore" "Phonesky" "SetupWizard" "Velvet")
 MIUI_EU_SYS_EXT_APP=("FM")
 MIUI_EU_SYS_EXT_PRIV_APP=("GoogleFeedback" "GoogleServicesFramework" "GoogleOneTimeInitializer")
 
@@ -53,358 +60,376 @@ MIUI_GLOBAL_VENDOR_APP=("Joyose")
 MIUI_GLOBAL_VENDOR_DATA_APP=("wps-lite" "GlobalFashiongallery" "XMRemoteController")
 
 remove_cust_app(){
-mount -o remount,rw /
-mount -o remount,rw /cust
-	
+	mount -o remount,rw /
+	mount -o remount,rw /cust
 	rm -rf /cust/*
 	mount -o remount,ro /cust
 	mount -o remount,ro /
-
 }
 
 remove_sys_app_core(){
-path=$1
-arr=$2
-for pp in ${arr[*]}
-do
-rm -rf "$path/$pp"
-done
+	path=$1
+	arr=$2
+	for pp in ${arr[*]}
+	do
+		rm -rf "$path/$pp"
+	done
 }
 
 disable_app_core(){
-arr=$1
-for pp in ${arr[*]}
-do
-am force-stop $pp
-pm clear $pp
-pm disable-user $pp
-done
+	arr=$1
+	for pp in ${arr[*]}
+	do
+		am force-stop $pp
+		pm clear $pp
+		pm disable-user $pp
+	done
 }
 
 clear_app_core(){
-arr=$1
-for pp in ${arr[*]}
-do
-pm clear $pp
-done
+	arr=$1
+	for pp in ${arr[*]}
+	do
+		pm clear $pp
+	done
 
 }
 
 stop_app_core(){
-arr=$1
-for pp in ${arr[*]}
-do
-am force-stop $pp
-done
+	arr=$1
+	for pp in ${arr[*]}
+	do
+		am force-stop $pp
+	done
 
 }
 
 uninstall_app_core(){
-arr=$1
-for pp in ${arr[*]}
-do
-am force-stop $pp
-pm clear $pp
-pm uninstall --user 0 $pp
-done
+	arr=$1
+	for pp in ${arr[*]}
+	do
+		am force-stop $pp
+		pm clear $pp
+		pm uninstall --user 0 $pp
+	done
 }
 
 mount_rw_sys(){
-mount -o remount,rw /
-mount -o remount,rw /product
-mount -o remount,rw /system_ext
-mount -o remount,rw /vendor
+	mount -o remount,rw /
+	mount -o remount,rw /product
+	mount -o remount,rw /system_ext
+	mount -o remount,rw /vendor
 }
 
 mount_ro_sys(){
-mount -o remount,ro /product
-mount -o remount,ro /system_ext
-mount -o remount,ro /vendor
-mount -o remount,ro /
+	mount -o remount,ro /product
+	mount -o remount,ro /system_ext
+	mount -o remount,ro /vendor
+	mount -o remount,ro /
+}
+
+remove_sys_app_miui13(){
+	mount_rw_sys
+	remove_sys_app_core "$SYSTEM_APP" "${MIUI_13_SYS_APP[*]}"
+	remove_sys_app_core "$SYSTEM_PRIV_APP" "${MIUI_13_SYS_PRIV_APP[*]}"
+	remove_sys_app_core "$SYSTEM_DATA_APP" "${MIUI_13_SYS_DATA_APP[*]}"
+	remove_sys_app_core "$SYSTEM_PRODUCT_APP" "${MIUI_13_PRODUCT_APP[*]}"
+	mount_ro_sys
+	remove_cust_app
+	remove_app_3
 }
 
 remove_sys_app_rui(){
-mount_rw_sys
-remove_sys_app_core "$SYSTEM_APP" "${RUI_SYS_APP[*]}"
-remove_sys_app_core "$SYSTEM_PRIV_APP" "${RUI_SYS_PRIV_APP[*]}"
-remove_sys_app_core "$SYSTEM_PRODUCT_PRIV_APP" "${RUI_SYS_PRODUCT_PRIV_APP[*]}"
-remove_sys_app_core "$SYSTEM_PRODUCT_APP" "${RUI_SYS_PRODUCT_APP[*]}"
-mount_ro_sys
-remove_cust_app
-remove_app_3
+	mount_rw_sys
+	remove_sys_app_core "$SYSTEM_APP" "${RUI_SYS_APP[*]}"
+	remove_sys_app_core "$SYSTEM_PRIV_APP" "${RUI_SYS_PRIV_APP[*]}"
+	remove_sys_app_core "$SYSTEM_PRODUCT_PRIV_APP" "${RUI_SYS_PRODUCT_PRIV_APP[*]}"
+	remove_sys_app_core "$SYSTEM_PRODUCT_APP" "${RUI_SYS_PRODUCT_APP[*]}"
+	mount_ro_sys
+	remove_cust_app
+	remove_app_3
 }
 
 
 remove_sys_app_miui_global(){
-mount_rw_sys
-remove_sys_app_core "$SYSTEM_APP" "${MIUI_GLOBAL_SYS_APP[*]}"
-remove_sys_app_core "$SYSTEM_PRIV_APP" "${MIUI_GLOBAL_SYS_PRIV_APP[*]}"
-remove_sys_app_core "$SYSTEM_DATA_APP" "${MIUI_GLOBAL_SYS_DATA_APP[*]}"
-remove_sys_app_core "$SYSTEM_PRODUCT_APP" "${MIUI_GLOBAL_PRODUCT_APP[*]}"
-remove_sys_app_core "$SYSTEM_PRODUCT_PRIV_APP" "${MIUI_GLOBAL_PRODUCT_PRIV_APP[*]}"
-remove_sys_app_core "$SYSTEM_VENDOR_APP" "${MIUI_GLOBAL_VENDOR_APP[*]}"
-remove_sys_app_core "$SYSTEM_VENDOR_DATA_APP" "${MIUI_GLOBAL_VENDOR_DATA_APP[*]}"
-remove_sys_app_core "$SYSTEM_EXT_APP" "${MIUI_GLOBAL_SYS_EXT_APP[*]}"
-remove_sys_app_core "$SYSTEM_EXT_PRIV_APP" "${MIUI_GLOBAL_SYS_EXT_PRIV_APP[*]}"
-mount_ro_sys
-remove_cust_app
-remove_app_3
+	mount_rw_sys
+	remove_sys_app_core "$SYSTEM_APP" "${MIUI_GLOBAL_SYS_APP[*]}"
+	remove_sys_app_core "$SYSTEM_PRIV_APP" "${MIUI_GLOBAL_SYS_PRIV_APP[*]}"
+	remove_sys_app_core "$SYSTEM_DATA_APP" "${MIUI_GLOBAL_SYS_DATA_APP[*]}"
+	remove_sys_app_core "$SYSTEM_PRODUCT_APP" "${MIUI_GLOBAL_PRODUCT_APP[*]}"
+	remove_sys_app_core "$SYSTEM_PRODUCT_PRIV_APP" "${MIUI_GLOBAL_PRODUCT_PRIV_APP[*]}"
+	remove_sys_app_core "$SYSTEM_VENDOR_APP" "${MIUI_GLOBAL_VENDOR_APP[*]}"
+	remove_sys_app_core "$SYSTEM_VENDOR_DATA_APP" "${MIUI_GLOBAL_VENDOR_DATA_APP[*]}"
+	remove_sys_app_core "$SYSTEM_EXT_APP" "${MIUI_GLOBAL_SYS_EXT_APP[*]}"
+	remove_sys_app_core "$SYSTEM_EXT_PRIV_APP" "${MIUI_GLOBAL_SYS_EXT_PRIV_APP[*]}"
+	mount_ro_sys
+	remove_cust_app
+	remove_app_3
 }
 
 remove_sys_app_miui_eu(){
-mount_rw_sys
-remove_sys_app_core "$SYSTEM_APP" "${MIUI_EU_SYS_APP[*]}"
-remove_sys_app_core "$SYSTEM_PRIV_APP" "${MIUI_EU_SYS_PRIV_APP[*]}"
-remove_sys_app_core "$SYSTEM_PRODUCT_APP" "${MIUI_EU_SYS_PRODUCT_APP[*]}"
-remove_sys_app_core "$SYSTEM_PRODUCT_PRIV_APP" "${MIUI_EU_SYS_PRODUCT_PRIV_APP[*]}"
-remove_sys_app_core "$SYSTEM_EXT_APP" "${MIUI_EU_SYS_EXT_APP[*]}"
-remove_sys_app_core "$SYSTEM_EXT_PRIV_APP" "${MIUI_EU_SYS_EXT_PRIV_APP[*]}"
-mount_ro_sys
-remove_cust_app
-remove_app_3
+	mount_rw_sys
+	remove_sys_app_core "$SYSTEM_APP" "${MIUI_EU_SYS_APP[*]}"
+	remove_sys_app_core "$SYSTEM_PRIV_APP" "${MIUI_EU_SYS_PRIV_APP[*]}"
+	remove_sys_app_core "$SYSTEM_PRODUCT_APP" "${MIUI_EU_SYS_PRODUCT_APP[*]}"
+	remove_sys_app_core "$SYSTEM_PRODUCT_PRIV_APP" "${MIUI_EU_SYS_PRODUCT_PRIV_APP[*]}"
+	remove_sys_app_core "$SYSTEM_EXT_APP" "${MIUI_EU_SYS_EXT_APP[*]}"
+	remove_sys_app_core "$SYSTEM_EXT_PRIV_APP" "${MIUI_EU_SYS_EXT_PRIV_APP[*]}"
+	mount_ro_sys
+	remove_cust_app
+	remove_app_3
 }
 
 
 remove_sys_app_miui(){
-mount_rw_sys
-remove_sys_app_core "$SYSTEM_APP" "${MIUI_SYS_APP[*]}"
-remove_sys_app_core "$SYSTEM_PRIV_APP" "${MIUI_SYS_PRIV_APP[*]}"
-remove_sys_app_core "$SYSTEM_DATA_APP" "${MIUI_SYS_DATA_APP[*]}"
-remove_sys_app_core "$SYSTEM_PRODUCT_APP" "${MIUI_SYS_PRODUCT_APP[*]}"
-remove_sys_app_core "$SYSTEM_VENDOR_APP" "${MIUI_VENDOR_APP[*]}"
-remove_sys_app_core "$SYSTEM_VENDOR_DATA_APP" "${MIUI_VENDOR_DATA_APP[*]}"
-remove_sys_app_core "$SYSTEM_EXT_APP" "${MIUI_SYS_EXT_APP[*]}"
-mount_ro_sys
-remove_cust_app
-remove_app_3
-
+	mount_rw_sys
+	remove_sys_app_core "$SYSTEM_APP" "${MIUI_SYS_APP[*]}"
+	remove_sys_app_core "$SYSTEM_PRIV_APP" "${MIUI_SYS_PRIV_APP[*]}"
+	remove_sys_app_core "$SYSTEM_DATA_APP" "${MIUI_SYS_DATA_APP[*]}"
+	remove_sys_app_core "$SYSTEM_PRODUCT_APP" "${MIUI_SYS_PRODUCT_APP[*]}"
+	remove_sys_app_core "$SYSTEM_VENDOR_APP" "${MIUI_VENDOR_APP[*]}"
+	remove_sys_app_core "$SYSTEM_VENDOR_DATA_APP" "${MIUI_VENDOR_DATA_APP[*]}"
+	remove_sys_app_core "$SYSTEM_EXT_APP" "${MIUI_SYS_EXT_APP[*]}"
+	mount_ro_sys
+	remove_cust_app
+	remove_app_3
 }
 
 disable_app_miui_eu(){
-disable_app_core "${MIUI_EU_APP[*]}"
+	clear_app_miui_eu
+	disable_app_core "${MIUI_EU_APP[*]}"
 }
 
 uninstall_app_miui_eu(){
-uninstall_app_core "${MIUI_EU_APP[*]}"
-}
-
-clear_app_miui_eu(){
-clear_app_core "${MIUI_EU_APP[*]}"
-}
-
-stop_app_miui_eu(){
-stop_app_3
-stop_app_core "${MIUI_EU_APP[*]}"
+	uninstall_app_core "${MIUI_EU_APP[*]}"
 }
 
 stop_app_3(){
-pm list packages -3 |cut -d':' -f2 |while read f
-do
-am force-stop $f
-done
+	pm list packages -3 |cut -d':' -f2 |while read f
+	do
+		am force-stop $f
+	done
 }
 
 remove_app_3(){
-pm list packages -3 |cut -d':' -f2 |while read f
-do
-if [ "$f" == "com.topjohnwu.magisk" ] || [ "$f" == "bin.mt.plus" ]
-then
-echo "skip!"
-else
-pm uninstall $f
-fi
-done
-echo "remove ok !!!"
+	pm list packages -3 |cut -d':' -f2 |while read f
+	do
+		if [ "$f" == "com.topjohnwu.magisk" ] || [ "$f" == "bin.mt.plus" ]
+		then
+			echo "skip!"
+		else
+			pm uninstall $f
+		fi
+	done
+	echo "remove ok !!!"
 }
 
-clear_app_rui(){
-clear_app_core "${RUI_APP_3[*]}"
+clear_app_miui_eu(){
+	stop_app_miui_eu
+	clear_app_core "${MIUI_EU_APP[*]}"
+}
+stop_app_miui_eu(){
+	stop_app_3
+	stop_app_core "${MIUI_EU_APP[*]}"
 }
 
 disable_app_rui(){
-disable_app_core "${RUI_APP_3[*]}"
-disable_app_core "${RUI_SYS_APP_PACKAGENAME[*]}"
-}
-
-uninstall_app_rui(){
-uninstall_app_core "${RUI_APP_3[*]}"
-uninstall_app_core "${RUI_SYS_APP_PACKAGENAME[*]}"
+	clear_app_rui
+	disable_app_core "${RUI_APP_3[*]}"
+	disable_app_core "${RUI_SYS_APP_PACKAGENAME[*]}"
 }
 
 stop_app_rui(){
-stop_app_3
-stop_app_core "${RUI_APP_3[*]}"
+	stop_app_3
+	stop_app_core "${RUI_APP_3[*]}"
 }
 
-stop_app_miui(){
-stop_app_3
-stop_app_core "${MIUI_APP_3[*]}"
+clear_app_rui(){
+	stop_app_rui
+	clear_app_core "${RUI_APP_3[*]}"
 }
 
-clear_app_miui(){
-clear_app_core "${MIUI_APP_3[*]}"
+uninstall_app_rui(){
+	uninstall_app_core "${RUI_APP_3[*]}"
+	uninstall_app_core "${RUI_SYS_APP_PACKAGENAME[*]}"
+}
+
+stop_app_miui13(){
+	stop_app_3
+	stop_app_core "${MIUI_13_PACKAGE[*]}"
+}
+clear_app_miui13(){
+	stop_app_miui13
+	clear_app_core "${MIUI_13_PACKAGE[*]}"
+}
+
+disable_app_miui13(){
+	clear_app_miui13
+	disable_app_core "${MIUI_13_PACKAGE[*]}"
+}
+
+uninstall_app_miui13(){
+	uninstall_app_core "${MIUI_13_PACKAGE[*]}"
 }
 
 disable_app_miui(){
-disable_app_core "${MIUI_APP_3[*]}"
+	clear_app_miui
+	disable_app_core "${MIUI_APP_3[*]}"
 }
 
+clear_app_miui(){
+	stop_app_miui
+	clear_app_core "${MIUI_APP_3[*]}"
+}
+
+stop_app_miui(){
+	stop_app_3
+	stop_app_core "${MIUI_APP_3[*]}"
+}
+
+
 uninstall_app_miui(){
-uninstall_app_core "${MIUI_APP_3[*]}"
+	uninstall_app_core "${MIUI_APP_3[*]}"
 }
 
 remove_app_miui_global(){
-if [ "$UID" == "0" ]
-then
-remove_sys_app_miui_global
-else
-echo "no support $UID"
-fi
+	if [ "$UID" == "0" ]
+	then
+		remove_sys_app_miui_global
+	else
+		echo "no support $UID"
+	fi
 }
 
 remove_app_miui_eu(){
-if [ "$UID" == "0" ]
-then
-clear_app_miui_eu
-uninstall_app_miui_eu
-remove_sys_app_miui_eu
-else
-clear_app_miui_eu
-disable_app_miui_eu
-uninstall_app_miui_eu
-fi
+	if [ "$UID" == "0" ]
+	then
+		clear_app_miui_eu
+		uninstall_app_miui_eu
+		remove_sys_app_miui_eu
+	else
+		disable_app_miui_eu
+		uninstall_app_miui_eu
+	fi
+}
+
+remove_app_miui13(){
+	if [ "$UID" == "0" ]
+	then
+		clear_app_miui13
+		uninstall_app_miui13
+		remove_sys_app_miui13
+	else
+		disable_app_miui13
+		uninstall_app_miui13
+	fi
 }
 
 remove_app_miui(){
-if [ "$UID" == "0" ]
-then
-clear_app_miui
-uninstall_app_miui
-remove_sys_app_miui
-else
-clear_app_miui
-disable_app_miui
-uninstall_app_miui
-fi
+	if [ "$UID" == "0" ]
+	then
+		clear_app_miui
+		uninstall_app_miui
+		remove_sys_app_miui
+	else
+		disable_app_miui
+		uninstall_app_miui
+	fi
 }
 
 remove_app_rui(){
-if [ "$UID" == "0" ]
-then
-clear_app_rui
-uninstall_app_rui
-remove_sys_app_rui
-else
-clear_app_rui
-disable_app_rui
-uninstall_app_rui
-fi
-pm clear com.oppo.launcher
+	if [ "$UID" == "0" ]
+	then
+		clear_app_rui
+		uninstall_app_rui
+		remove_sys_app_rui
+	else
+		disable_app_rui
+		uninstall_app_rui
+	fi
+	pm clear com.oppo.launcher
 }
 
 
 fix_rui_menu(){
-if [ "$UID" == "0" ]
-then
-echo "not support $UID"
-exit 1;
-else
-echo -ne "1.fix safecenter\ninput : "
-read xx
-case $xx in
-1)
-pm enable com.coloros.safecenter
-exit 0;;
-*)remove_app_menu;;
-esac
-fi
+	if [ "$UID" == "0" ]
+	then
+		echo "not support $UID"
+		exit 1;
+	else
+		echo -ne "1.fix safecenter\ninput : "
+		read xx
+		case $xx in
+		1)
+			pm enable com.coloros.safecenter
+			exit 0;;
+		*)remove_app_menu;;
+		esac
+	fi
 }
 
 remove_app_menu(){
-echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui(global)\n5.other\ninput : "
-read xx
-case $xx in
-1)
-remove_app_miui
-exit 0;;
-2)
-remove_app_rui
-exit 0;;
-3)
-remove_app_miui_eu
-exit 0;;
-4)
-remove_app_miui_global
-exit 0;;
-5)
-remove_app_3
-exit 0;;
-*)remove_app_menu;;
-esac
+	echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui(global)\n5.miui13\n6.other\ninput : "
+	read xx
+	case $xx in
+	1)
+		remove_app_miui
+		exit 0;;
+	2)
+		remove_app_rui
+		exit 0;;
+	3)
+		remove_app_miui_eu
+		exit 0;;
+	4)
+		remove_app_miui_global
+		exit 0;;
+	5)
+		remove_app_miui13
+		exit 0;;
+	6)
+		remove_app_3
+		exit 0;;
+	*)remove_app_menu;;
+	esac
 }
 disable_app_menu(){
-echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.other\ninput : "
-read xx2
-case $xx2 in
-1)
-stop_app_miui
-clear_app_miui
-disable_app_miui
-exit 0;;
-2)
-stop_app_rui
-clear_app_rui
-disable_app_rui
-exit 0;;
-3)
-stop_app_miui_eu
-clear_app_miui_eu
-disable_app_miui_eu
-exit 0;;
-4)
-stop_app_3
-exit 0;;
-*)stop_app_menu;;
-esac
-}
-
-stop_app_menu(){
-echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.other\ninput : "
-read xx2
-case $xx2 in
-1)
-stop_app_miui
-exit 0;;
-2)
-stop_app_rui
-exit 0;;
-3)
-stop_app_miui_eu
-exit 0;;
-4)
-stop_app_3
-exit 0;;
-*)stop_app_menu;;
-esac
+	echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui13\n5.other\ninput : "
+	read xx2
+	case $xx2 in
+	1)
+		disable_app_miui
+		exit 0;;
+	2)
+		disable_app_rui
+		exit 0;;
+	3)
+		disable_app_miui_eu
+		exit 0;;
+	4)
+		disable_app_miui13
+		exit 0;;
+	5)
+		stop_app_3
+		exit 0;;
+	*)stop_app_menu;;
+	esac
 }
 
 main(){
-echo -ne "1.remove app\n2.stop app\n3.disable app\n4.fix app\ninput : "
-read xxx
-case $xxx in
-1)
-remove_app_menu
-exit 0;;
-2)
-stop_app_menu
-exit 0;;
-3)
-disable_app_menu
-exit 0;;
-4)
-fix_rui_menu
-exit 0;;
-*)main;;
-esac
+	echo -ne "1.remove app\n2.disable app\n3.fix app\ninput : "
+	read xxx
+	case $xxx in
+	1)
+		remove_app_menu
+		exit 0;;
+	2)
+		disable_app_menu
+		exit 0;;
+	3)
+		fix_rui_menu
+		exit 0;;
+	*)main;;
+	esac
 }
 main
