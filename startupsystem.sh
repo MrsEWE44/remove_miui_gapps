@@ -46,7 +46,7 @@ MIUI_13_PACKAGE=("com.baidu.input_mi" "com.iflytek.inputmethod.miui" "com.xiaomi
 MIUI_EU_SYS_APP=("BookmarkProvider" "CloudService" "com.xiaomi.macro"  "GooglePrintRecommendationService" "Email" "Health" "Joyose" "Lens" "LiveWallpapersPicker" "mi_connect_service" "MiuiBugReport" "MiCloudSync" "MiDrive" "MiGalleryLockscreen" "MiLinkService" "MiPlayClient" "MiRadio" "MiuiVideoGlobal" "NextPay" "Notes" "PaymentService" "PrintSpooler"  "Updater" "XiaomiAccount" "wps-lite" "XMSFKeeper")
 MIUI_EU_SYS_PRIV_APP=("Backup" "BackupRestoreConfirmation" "BuiltlnPrintService" "CloudBackup" "CloudServiceSysbase" "DownloadProvider" "DownloadProviderUi" "FindDevice" "MiBrowserGlobal" "MiMover" "MiService" "MiuiScanner" "Music" "MusicFX" "PersonalAssistant" "QuickSearchBox")
 MIUI_EU_SYS_PRODUCT_APP=("GoogleCalendarSyncAdapter" "GoogleContactsSyncAdapter" "GoogleLocationHistory" "GoogleTTS")
-MIUI_EU_SYS_PRODUCT_PRIV_APP=("AndroidAutoSub" "CarrierServices" "GoogleServicesFramework" "ConfigUpdater" "GmsCore" "GooglePartnerSetup" "GoogleRestore" "Phonesky" "SetupWizard" "Velvet")
+MIUI_EU_SYS_PRODUCT_PRIV_APP=("AndroidAutoSub" "CarrierServices" "GoogleServicesFramework" "ConfigUpdater" "GmsCore" "GooglePartnerSetup" "GoogleRestore" "Phonesky" "Velvet")
 MIUI_EU_SYS_EXT_APP=("FM")
 MIUI_EU_SYS_EXT_PRIV_APP=("GoogleFeedback" "GoogleServicesFramework" "GoogleOneTimeInitializer")
 
@@ -64,6 +64,10 @@ FUNTOUCH_4_PACKAGE=("com.vivo.videoeditor" "com.vivo.collage" "com.vivo.game" "c
 FUNTOUCH_SYS_APP=( "VoiceOneshot" "VoiceAssist" "VLife_vivo" "vivospace-v2" "VivoAssistant" "HiBoard" "AppBehaviorEngine" "MotionRecognition" "Updater" "BaiduOnlineSpeechService" "BBKAccount" "BBKAppStore" "BBKCloud" "BBKCrontab" "BBKLOG" "BBKMusic" "BBKPhoneInstructions" "BBKVideoPlayer" "FindPhone" "GlobalSearch")
 FUNTOUCH_SYS_CUST_PRIV_APP=("Email" "VivoOffice")
 
+MYUI_SYS_PRIV_APP=("LenovoStore" "LSF-Device-Phone" "XuiEasySync" "ZuiBrowser" "ZuiXlog")
+MYUI_PRODUCT_PRIV_APP=("MotoDisplayV6" "MotoLeanbackLauncher" "AiServices" "BaiduNetworkLocation" "MotoTour" "MotoHelp" "GameMode" "GmsCore" "GooglePlayServicesUpdater" "GuideMe" "LSF-User-Phone" "MotoAppUIRefresh" "MotoDesktop")
+MYUI_SYS_EXT_PRIV_APP=("VoiceTranslation" "MotoFeatureDiscovery" "3c_ota" "MotoTaskBar" "DemoMode" "FindMyPhone" "GbaAppSDK" "MotoThinkUEM" "MyScreen" "GoogleOneTimeInitializer" "GoogleServicesFramework" "HiddenMenu" "LeVoiceAgent" "LeVoiceSTApp" "LifetimeData" "MotCameraDesktop" "MotoDesktopCore")
+MYUI_PACKAGE=("com.motorola.aiservices" "com.motorola.cn.voicetranslation" "com.motorola.discovery" "com.motorola.systemui.desk" "com.thinkuem.motolc" "com.cmcc.gbaserver" "com.motorola.myscreen" "com.motorola.demo" "com.google.android.onetimeinitializer" "com.google.android.gsf" "com.lenovo.levoice_agent" "com.motorola.motcameradesktop" "com.motorola.mobiledesktop.core" "com.motorola.lifetimedata" "com.lenovo.levoice_trigger" "com.motorola.hiddenmenuapp" "com.zui.antitheft" "com.motorola.ccc.ota" "com.motorola.leanbacklauncher" "com.motorola.mototour" "com.motorola.motodisplay" "com.motorola.help" "com.baidu.map.location" "com.motorola.gamemode" "com.google.android.gms" "com.motorola.genie" "com.lenovo.lsf" "com.motorola.moto" "com.motorola.mobiledesktop" "com.android.vending" "com.lenovo.leos.appstore" "com.lenovo.lsf.device" "com.lenovo.leos.cloud.sync" "com.zui.browser" "com.zui.xlog")
 
 remove_cust_app(){
 	mount -o remount,rw /
@@ -146,6 +150,18 @@ remove_sys_app_miui13(){
 	remove_cust_app
 	remove_app_3
 }
+
+remove_sys_app_myui(){
+	mount_rw_sys
+	remove_sys_app_core "$SYSTEM_PRIV_APP" "${MYUI_SYS_PRIV_APP[*]}"
+	remove_sys_app_core "$SYSTEM_PRODUCT_PRIV_APP" "${MYUI_PRODUCT_PRIV_APP[*]}"
+	remove_sys_app_core "$SYSTEM_EXT_PRIV_APP" "${MYUI_SYS_EXT_PRIV_APP[*]}"
+	rm -rf /system/product/preinstall/*
+	mount_ro_sys
+	remove_cust_app
+	remove_app_3
+}
+
 
 remove_sys_app_rui(){
 	mount_rw_sys
@@ -277,6 +293,10 @@ uninstall_app_rui(){
 	uninstall_app_core "${RUI_SYS_APP_PACKAGENAME[*]}"
 }
 
+uninstall_app_myui(){
+	uninstall_app_core "${MYUI_PACKAGE[*]}"
+}
+
 stop_app_miui13(){
 	stop_app_3
 	stop_app_core "${MIUI_13_PACKAGE[*]}"
@@ -302,6 +322,22 @@ uninstall_app_funtouch4(){
 disable_app_miui(){
 	clear_app_miui
 	disable_app_core "${MIUI_APP_3[*]}"
+}
+
+disable_app_myui(){
+	clear_app_myui
+	disable_app_core "${MYUI_PACKAGE[*]}"
+}
+
+clear_app_myui(){
+	stop_app_myui
+	clear_app_core "${MYUI_PACKAGE[*]}"
+}
+
+
+stop_app_myui(){
+	stop_app_3
+	stop_app_core "${MYUI_PACKAGE[*]}"
 }
 
 clear_app_miui(){
@@ -389,6 +425,18 @@ remove_app_rui(){
 	pm clear com.oppo.launcher
 }
 
+remove_app_myui(){
+	if [ "$UID" == "0" ]
+	then
+		clear_app_myui
+		uninstall_app_myui
+		remove_sys_app_myui
+	else
+		disable_app_myui
+		uninstall_app_myui
+	fi
+}
+
 
 fix_rui_menu(){
 	if [ "$UID" == "0" ]
@@ -408,7 +456,7 @@ fix_rui_menu(){
 }
 
 remove_app_menu(){
-	echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui(global)\n5.miui13\n6.funtouch4\n7.other\ninput : "
+	echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui(global)\n5.miui13\n6.funtouch4\n7.myui\n8.other\ninput : "
 	read xx
 	case $xx in
 	1)
@@ -430,13 +478,16 @@ remove_app_menu(){
 		remove_app_funtouch4
 		exit 0;;
 	7)
+		remove_app_myui
+		exit 0;;
+	8)
 		remove_app_3
 		exit 0;;
 	*)remove_app_menu;;
 	esac
 }
 disable_app_menu(){
-	echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui13\n5.funtouch4\n6.other\ninput : "
+	echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui13\n5.funtouch4\n6.myui\n7.other\ninput : "
 	read xx2
 	case $xx2 in
 	1)
@@ -454,7 +505,10 @@ disable_app_menu(){
 	5)
 		disable_app_funtouch4
 		exit 0;;
-	6)
+	5)
+		disable_app_myui
+		exit 0;;
+	7)
 		stop_app_3
 		exit 0;;
 	*)stop_app_menu;;
