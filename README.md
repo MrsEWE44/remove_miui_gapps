@@ -3,9 +3,15 @@
 # And the same time it also supports non-root and root mode work!
 
 # How to run it?
+
 1.have root
+
   a.unlock system read-only
+
   b.get root 
+  
   c.run the script on terminal or adb shell (su)
+
 2.no root
+  
   a.run the script on adb shell 
