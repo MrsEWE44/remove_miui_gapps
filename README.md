@@ -1,6 +1,11 @@
-# remove_miui_gapps
-This a remove miui12 google apps scripts, need unlock system partition read-only type and need have root permission
+# This is a built-in deletion script in the system. It has been updated to many versions. It not only supports the miui series, but also supports flyme, coloros, realmeui, funtouchos, and myui.
 
-support adb shell and terminal 
+# And the same time it also supports non-root and root mode work!
 
-I test in redmi note 9 4g , it's work ok !
+# How to run it?
+1.have root
+  a.unlock system read-only
+  b.get root 
+  c.run the script on terminal or adb shell (su)
+2.no root
+  a.run the script on adb shell 
