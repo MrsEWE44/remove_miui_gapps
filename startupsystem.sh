@@ -69,6 +69,11 @@ MYUI_PRODUCT_PRIV_APP=("MotoDisplayV6" "MotoLeanbackLauncher" "AiServices" "Baid
 MYUI_SYS_EXT_PRIV_APP=("VoiceTranslation" "MotoFeatureDiscovery" "3c_ota" "MotoTaskBar" "DemoMode" "FindMyPhone" "GbaAppSDK" "MotoThinkUEM" "MyScreen" "GoogleOneTimeInitializer" "GoogleServicesFramework" "HiddenMenu" "LeVoiceAgent" "LeVoiceSTApp" "LifetimeData" "MotCameraDesktop" "MotoDesktopCore")
 MYUI_PACKAGE=("com.motorola.aiservices" "com.motorola.cn.voicetranslation" "com.motorola.discovery" "com.motorola.systemui.desk" "com.thinkuem.motolc" "com.cmcc.gbaserver" "com.motorola.myscreen" "com.motorola.demo" "com.google.android.onetimeinitializer" "com.google.android.gsf" "com.lenovo.levoice_agent" "com.motorola.motcameradesktop" "com.motorola.mobiledesktop.core" "com.motorola.lifetimedata" "com.lenovo.levoice_trigger" "com.motorola.hiddenmenuapp" "com.zui.antitheft" "com.motorola.ccc.ota" "com.motorola.leanbacklauncher" "com.motorola.mototour" "com.motorola.motodisplay" "com.motorola.help" "com.baidu.map.location" "com.motorola.gamemode" "com.google.android.gms" "com.motorola.genie" "com.lenovo.lsf" "com.motorola.moto" "com.motorola.mobiledesktop" "com.android.vending" "com.lenovo.leos.appstore" "com.lenovo.lsf.device" "com.lenovo.leos.cloud.sync" "com.zui.browser" "com.zui.xlog")
 
+FLYME9_SYS_APP=("AppCenter" "MzCloudService" "MzPay" "MzPhoneLocationService" "MzSyncService" "MzUpdate")
+FLYME9_SYS_PRIV_APP=("AlphaMe" "Assistant" "Browser" "DirectService" "EasyLauncher" "FlymeLab" "FlymeMusic" "MeizuPay" "NativeLockScreen" "Picker" "Search" "Suggestion" "Video" "VoiceAssistant")
+FLYME9_SYS_MZAPP=("GameCenter" "GameSDKService" "LockScreenFramework" "mCareNew" "MzStore" "Pedometer")
+FLYME9_PACKAGE=("com.meizu.flyme.gamecenter" "com.meizu.gamecenter.service" "com.flyme.meizu.store" "com.meizu.net.pedometer" "com.ibimuyu.lockscreen" "com.meizu.mcare" "com.meizu.alphame" "com.meizu.assistant" "com.android.browser" "com.meizu.flyme.easylauncher" "com.meizu.media.music" "com.meizu.net.nativelockscreen" "com.meizu.media.video" "com.meizu.voiceassistant" "com.meizu.net.search" "com.meizu.suggestion" "com.meizu.picker" "com.meizu.mznfcpay" "com.meizu.flymelab" "com.meizu.flyme.directservice" "com.meizu.mstore" "com.meizu.cloud" "com.meizu.account.pay" "com.meizu.flyme.service.find" "com.meizu.mzsyncservice" "com.meizu.flyme.update")
+
 remove_cust_app(){
 	mount -o remount,rw /
 	mount -o remount,rw /cust
@@ -121,6 +126,8 @@ uninstall_app_core(){
 		am force-stop $pp
 		pm clear $pp
 		pm uninstall --user 0 $pp
+		ppapa=$(pm path $pp |cut -d':' -f2)
+		rm -rf "$ppapa"
 	done
 }
 
@@ -162,6 +169,16 @@ remove_sys_app_myui(){
 	remove_app_3
 }
 
+remove_sys_app_flyme9(){
+	mount_rw_sys
+	remove_sys_app_core "$SYSTEM_APP" "${FLYME9_SYS_APP[*]}"
+	remove_sys_app_core "$SYSTEM_PRIV_APP" "${FLYME9_SYS_PRIV_APP[*]}"
+	remove_sys_app_core "/system/MzApp" "${FLYME9_SYS_MZAPP[*]}"
+	rm -rf /system/product/custom/*
+	mount_ro_sys
+	remove_cust_app
+	remove_app_3
+}
 
 remove_sys_app_rui(){
 	mount_rw_sys
@@ -297,6 +314,10 @@ uninstall_app_myui(){
 	uninstall_app_core "${MYUI_PACKAGE[*]}"
 }
 
+uninstall_app_flyme9(){
+	uninstall_app_core "${FLYME9_PACKAGE[*]}"
+}
+
 stop_app_miui13(){
 	stop_app_3
 	stop_app_core "${MIUI_13_PACKAGE[*]}"
@@ -329,11 +350,25 @@ disable_app_myui(){
 	disable_app_core "${MYUI_PACKAGE[*]}"
 }
 
+disable_app_flyme9(){
+	clear_app_flyme9
+	disable_app_core "${FLYME9_PACKAGE[*]}"
+}
+
 clear_app_myui(){
 	stop_app_myui
 	clear_app_core "${MYUI_PACKAGE[*]}"
 }
 
+clear_app_flyme9(){
+	stop_app_flyme9
+	clear_app_core "${FLYME9_PACKAGE[*]}"
+}
+
+stop_app_flyme9(){
+	stop_app_3
+	stop_app_core "${FLYME9_PACKAGE[*]}"
+}
 
 stop_app_myui(){
 	stop_app_3
@@ -437,6 +472,17 @@ remove_app_myui(){
 	fi
 }
 
+remove_app_flyme9(){
+	if [ "$UID" == "0" ]
+	then
+		clear_app_flyme9
+		uninstall_app_flyme9
+		remove_sys_app_flyme9
+	else
+		disable_app_flyme9
+		uninstall_app_flyme9
+	fi
+}
 
 fix_rui_menu(){
 	if [ "$UID" == "0" ]
@@ -456,7 +502,7 @@ fix_rui_menu(){
 }
 
 remove_app_menu(){
-	echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui(global)\n5.miui13\n6.funtouch4\n7.myui\n8.other\ninput : "
+	echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui(global)\n5.miui13\n6.funtouch4\n7.myui\n8.flyme9\n9.other\ninput : "
 	read xx
 	case $xx in
 	1)
@@ -481,13 +527,16 @@ remove_app_menu(){
 		remove_app_myui
 		exit 0;;
 	8)
+		remove_app_flyme9
+		exit 0;;
+	9)
 		remove_app_3
 		exit 0;;
 	*)remove_app_menu;;
 	esac
 }
 disable_app_menu(){
-	echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui13\n5.funtouch4\n6.myui\n7.other\ninput : "
+	echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui13\n5.funtouch4\n6.myui\n7.flyme9\n8.other\ninput : "
 	read xx2
 	case $xx2 in
 	1)
@@ -505,10 +554,13 @@ disable_app_menu(){
 	5)
 		disable_app_funtouch4
 		exit 0;;
-	5)
+	6)
 		disable_app_myui
 		exit 0;;
 	7)
+		disable_app_flyme9
+		exit 0;;
+	8)
 		stop_app_3
 		exit 0;;
 	*)stop_app_menu;;
