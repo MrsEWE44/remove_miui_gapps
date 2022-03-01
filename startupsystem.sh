@@ -19,13 +19,14 @@ RUI_APP_3=("com.coloros.backuprestore" "com.heytap.pictorial" "com.heytap.cloud"
 
 MIUI_EU_APP=("com.google.android.googlequicksearchbox" "com.miui.misound" "com.google.android.soundpicker" "pl.zdunex25.updater" "com.xiaomi.payment" "com.android.email" "com.miui.bugreport" "com.android.browser" "com.miui.cloudbackup" "com.xiaomi.finddevice" "com.miui.miservice" "com.miui.fm" "com.google.android.feedback" "cn.wps.moffice_eng.xiaomi.lite" "com.miui.huanji" "com.xiaomi.mi_connect_service" "com.miui.newmidrive" "com.google.android.apps.cloudprint" "com.miui.videoplayer" "com.google.ar.lens" "com.google.android.syncadapters.contacts" "com.google.android.partnersetup" "com.google.android.syncadapters.calendar" "com.google.android.tts" "com.google.android.gms.location.history" "com.google.android.onetimeinitializer" "com.android.vending")
 
-
 RUI_SYS_APP_PACKAGENAME=("com.nearme.gamecenter" "com.heytap.quicksearchbox" "com.opos.ads" "com.coloros.digitalwellbeing" "com.realme.movieshot" "com.oplus.onetrace" "com.heytap.openid" "com.finshell.wallet" "com.heytap.music" "com.heytap.yoli" "com.coloros.translate.engine" "com.heytap.speechassist" "com.heytap.browser" "com.coloros.wifisecuredetect" "com.heytap.synergy" "com.heytap.pictorial" "com.heytap.cloud" "com.oppo.atlas" "com.coloros.healthcheck" "com.realme.wellbeing" "com.coloros.systemclone" "com.oplus.oscenter" "com.heytap.datamigration" "com.heytap.linker" "com.heytap.usercenter" "com.heytap.market" "com.coloros.apprecover" "com.coloros.safecenter" "com.coloros.bootreg" "com.coloros.regservice" "com.coloros.activation" "com.coloros.pictorial" "com.oppo.usercenter" "com.nearme.instant.platform" "com.nearme.romupdate" "com.nearme.statistics.rom" "com.coloros.phonemanager" "com.coloros.assistantscreen" "com.coloros.backuprestore" "com.coloros.backuprestore.remoteservice" "com.coloros.childrenspace" "com.coloros.cloud" "com.coloros.directui" "com.color.eyeprotect" "com.color.uiengine" "com.mobiletools.systemhelper" "com.oppo.ctautoregist" "com.coloros.feedback" "com.coloros.encryption" "com.realme.findphone.client2" "com.coloros.gamespace" "com.coloros.healthcheck" "com.iflytek.speechsuite" "com.nearme.instant.platform" "com.oppo.market" "com.nearme.atlas" "com.oppo.usercenter" "com.coloros.ocrscanner" "com.coloros.ocrservice" "com.oppo.aod" "com.oppo.atlas" "com.nearme.statistics.rom" "com.dropboxchmod" "com.oppo.engineermode" "com.oppo.logkit" "com.coloros.oppomultiapp" "com.coloros.operationManual" "com.coloros.activation" "com.coloros.translate.engine" "com.coloros.wallet" "com.coloros.oshare" "com.oppo.ota" "com.oppo.otaui" "com.coloros.remoteguardservice" "com.coloros.sau" "com.coloros.sauhelper" "com.nearme.browser" "com.google.android.configupdater" "com.coloros.findmyphone" "com.oppo.quicksearchbox" "com.oppo.music" "com.coloros.speechassist" "com.coloros.speechassist.engine" "com.coloros.sceneservice" "com.coloros.smartdrive" "com.coloros.smartlock" "com.coloros.video")
 
 RUI_SYS_APP=("AssistantScreen" "BackupAndRestore" "BackupRestoreRemoteService" "BookmarkProvider" "BTtestmode" "BuiltlnPrintService" "CloudService" "ColorDirectService" "ColorDirectUI2" "ColorUIEngine" "com.mobiletools.systemhelper-19771" "CTAutoRegist" "Feedback" "FindMyPhoneClient2" "FloatAssistant" "GameSpace" "GoogleContactsSyncAdapter" "GooglePrintRecommendationService" "HealthCheck" "IFlySpeechService" "Instant" "InstantLocalService" "KeKeMarket" "KeKePay" "KeKeUserCenter" "OcrScanner2" "OppoAod" "OppoAtlasService" "OppoDropboxChmodService" "OppoEngineerMode" "OppoLFEHer" "OppoLogKit" "OppoMultiApp" "OppoOperationManual" "OppoPhoneActivation" "OppoTranslationService" "OppoTZUpdate" "OppoWallet" "OShare" "OTA" "OTAUI" "RegService" "RemoteGuardService" "RomUpdate" "SAUHelper" "SecurePay" "SupportServices" "SystemAppUpdateService")
 RUI_SYS_PRIV_APP=("HeyTapUserCenter" "HeyTapSpeechService" "HeyTapSpeechAssist" "Browser" "ConfigUpdater" "FindMyPhone" "GlobalSearch" "GmsCore" "GoogleBackupTransport" "GoogleOneTimeInitializer" "GooglePartnerSetup" "GooglePlayServicesUpdater" "GoogleServicesFramework" "OppoBootReg" "OppoMusic" "OppoSpeechAssist" "OppoSpeechService" "SceneService" "seccamservice" "SmartDrive" "SmartLock" "SOSHelper" "VideoGallery")
 RUI_SYS_PRODUCT_PRIV_APP=("ConfigUpdater" "GmsCore" "GoogleBackupTransport" "GoogleOneTimeInitializer" "GooglePartnerSetup" "GooglePlayServicesUpdater" "GoogleServicesFramework")
 RUI_SYS_PRODUCT_APP=("GoogleContactsSyncAdapter")
+RUI_PACKAGES=("com.coloros.assistantscreen" "com.coloros.backuprestore" "com.coloros.backuprestore.remoteservice" "com.baidu.input_oppo" "com.coloros.childrenspace" "com.coloros.cloud" "com.coloros.colordirectservice" "com.coloros.directui" "com.mobiletools.systemhelper" "com.coloros.feedback" "com.coloros.encryption" "com.realme.findphone.client2" "com.coloros.floatassistant" "com.coloros.gamespace" "com.coloros.healthcheck" "com.nearme.instant.platform" "com.oppo.instant.local.service" "com.oppo.market" "com.nearme.atlas" "com.oppo.usercenter" "com.oppo.mimosiso" "com.coloros.ocrscanner" "com.coloros.ocrservice" "com.oppo.aod" "com.oppo.atlas" "com.nearme.statistics.rom" "com.dropboxchmod" "com.coloros.operationManual" "com.coloros.activation" "com.oppo.oppoportaldetect" "com.oppo.postmanservice" "com.coloros.translate.engine" "com.coloros.wallet" "com.coloros.oshare" "com.oppo.ota" "com.oppo.otaui" "com.oppo.ovoicemanager" "com.coloros.pictorial" "com.coloros.remoteguardservice" "com.nearme.romupdate" "com.coloros.sauhelper" "com.coloros.sau" "com.nearme.browser" "com.google.android.configupdater" "com.coloros.findmyphone" "com.oppo.quicksearchbox" "com.nearme.themestore" "com.oppo.music" "com.coloros.speechassist" "com.coloros.speechassist.engine" "com.coloros.sceneservice" "com.coloros.smartdrive" "com.coloros.video")
+
 
 MIUI_SYS_APP=("CloudService" "com.xiaomi.macro" "HybridAccessory" "HybridPlatform" "Joyose" "mab" "mi_connect_service" "MiCloudSync" "MiLinkService2" "MiuiBugReport" "MiPlayClient" "MiuiAccessibility" "MiuiPrintSpoolerBeta" "MiuiSuperMarket" "MSA" "Music" "NextPay" "PaymentService" "TSMClient" "Updater" "VoiceAssist" "UPTsmService" "XiaomiAccount" "XMCloudEngine" "XMSFKeeper" "YouDaoEngine" "XMSFKeeper")
 MIUI_SYS_DATA_APP=("Email" "GameCenter" "Huanji" "MiDrive" "MiFinance" "MiLiveAssistant" "Mipay" "MiRadio" "MiShop" "MiuiScanner" "NewHome" "SmartTravel" "VipAccount" "VirtualSim" "XiaoAiSpeechEngine" "Youpin")
@@ -125,8 +126,8 @@ uninstall_app_core(){
 	do
 		am force-stop $pp
 		pm clear $pp
-		pm uninstall --user 0 $pp
 		ppapa=$(pm path $pp |cut -d':' -f2)
+		pm uninstall --user 0 $pp
 		rm -rf "$ppapa"
 	done
 }
@@ -153,6 +154,7 @@ remove_sys_app_miui13(){
 	remove_sys_app_core "$SYSTEM_PRODUCT_APP" "${MIUI_13_PRODUCT_APP[*]}"
 	remove_sys_app_core "$SYSTEM_VENDOR_APP" "${MIUI_13_VENDOR_APP[*]}"
 	remove_sys_app_core "$SYSTEM_VENDOR_DATA_APP" "${MIUI_13_VENDOR_DATA_APP[*]}"
+	uninstall_app_miui13
 	mount_ro_sys
 	remove_cust_app
 	remove_app_3
@@ -164,6 +166,7 @@ remove_sys_app_myui(){
 	remove_sys_app_core "$SYSTEM_PRODUCT_PRIV_APP" "${MYUI_PRODUCT_PRIV_APP[*]}"
 	remove_sys_app_core "$SYSTEM_EXT_PRIV_APP" "${MYUI_SYS_EXT_PRIV_APP[*]}"
 	rm -rf /system/product/preinstall/*
+	uninstall_app_myui
 	mount_ro_sys
 	remove_cust_app
 	remove_app_3
@@ -175,6 +178,7 @@ remove_sys_app_flyme9(){
 	remove_sys_app_core "$SYSTEM_PRIV_APP" "${FLYME9_SYS_PRIV_APP[*]}"
 	remove_sys_app_core "/system/MzApp" "${FLYME9_SYS_MZAPP[*]}"
 	rm -rf /system/product/custom/*
+	uninstall_app_flyme9
 	mount_ro_sys
 	remove_cust_app
 	remove_app_3
@@ -186,6 +190,15 @@ remove_sys_app_rui(){
 	remove_sys_app_core "$SYSTEM_PRIV_APP" "${RUI_SYS_PRIV_APP[*]}"
 	remove_sys_app_core "$SYSTEM_PRODUCT_PRIV_APP" "${RUI_SYS_PRODUCT_PRIV_APP[*]}"
 	remove_sys_app_core "$SYSTEM_PRODUCT_APP" "${RUI_SYS_PRODUCT_APP[*]}"
+	uninstall_app_rui
+	mount_ro_sys
+	remove_cust_app
+	remove_app_3
+}
+
+remove_sys_app_funtouch4(){
+	mount_rw_sys
+	uninstall_app_funtouch4
 	mount_ro_sys
 	remove_cust_app
 	remove_app_3
@@ -216,6 +229,7 @@ remove_sys_app_miui_eu(){
 	remove_sys_app_core "$SYSTEM_PRODUCT_PRIV_APP" "${MIUI_EU_SYS_PRODUCT_PRIV_APP[*]}"
 	remove_sys_app_core "$SYSTEM_EXT_APP" "${MIUI_EU_SYS_EXT_APP[*]}"
 	remove_sys_app_core "$SYSTEM_EXT_PRIV_APP" "${MIUI_EU_SYS_EXT_PRIV_APP[*]}"
+	uninstall_app_miui_eu
 	mount_ro_sys
 	remove_cust_app
 	remove_app_3
@@ -231,6 +245,7 @@ remove_sys_app_miui(){
 	remove_sys_app_core "$SYSTEM_VENDOR_APP" "${MIUI_VENDOR_APP[*]}"
 	remove_sys_app_core "$SYSTEM_VENDOR_DATA_APP" "${MIUI_VENDOR_DATA_APP[*]}"
 	remove_sys_app_core "$SYSTEM_EXT_APP" "${MIUI_SYS_EXT_APP[*]}"
+	uninstall_app_miui
 	mount_ro_sys
 	remove_cust_app
 	remove_app_3
@@ -242,6 +257,7 @@ disable_app_miui_eu(){
 }
 
 uninstall_app_miui_eu(){
+	clear_app_miui_eu
 	uninstall_app_core "${MIUI_EU_APP[*]}"
 }
 
@@ -274,7 +290,7 @@ remove_app_3(){
 		then
 			echo "skip!"
 		else
-			pm uninstall $f
+			pm uninstall --user 0 $f
 		fi
 	done
 	echo "remove ok !!!"
@@ -306,15 +322,19 @@ clear_app_rui(){
 }
 
 uninstall_app_rui(){
+	clear_app_rui
 	uninstall_app_core "${RUI_APP_3[*]}"
 	uninstall_app_core "${RUI_SYS_APP_PACKAGENAME[*]}"
+	uninstall_app_core "${RUI_PACKAGES[*]}"
 }
 
 uninstall_app_myui(){
+	clear_app_myui
 	uninstall_app_core "${MYUI_PACKAGE[*]}"
 }
 
 uninstall_app_flyme9(){
+	clear_app_flyme9
 	uninstall_app_core "${FLYME9_PACKAGE[*]}"
 }
 
@@ -333,10 +353,12 @@ disable_app_miui13(){
 }
 
 uninstall_app_miui13(){
+	clear_app_miui13
 	uninstall_app_core "${MIUI_13_PACKAGE[*]}"
 }
 
 uninstall_app_funtouch4(){
+	clear_app_funtouch4
 	uninstall_app_core "${FUNTOUCH_4_PACKAGE[*]}"
 }
 
@@ -387,6 +409,7 @@ stop_app_miui(){
 
 
 uninstall_app_miui(){
+	clear_app_miui
 	uninstall_app_core "${MIUI_APP_3[*]}"
 }
 
@@ -402,8 +425,6 @@ remove_app_miui_global(){
 remove_app_miui_eu(){
 	if [ "$UID" == "0" ]
 	then
-		clear_app_miui_eu
-		uninstall_app_miui_eu
 		remove_sys_app_miui_eu
 	else
 		disable_app_miui_eu
@@ -414,8 +435,6 @@ remove_app_miui_eu(){
 remove_app_miui13(){
 	if [ "$UID" == "0" ]
 	then
-		clear_app_miui13
-		uninstall_app_miui13
 		remove_sys_app_miui13
 	else
 		disable_app_miui13
@@ -427,8 +446,7 @@ remove_app_miui13(){
 remove_app_funtouch4(){
 	if [ "$UID" == "0" ]
 	then
-		clear_app_funtouch4
-		
+		remove_sys_app_funtouch4
 	else
 		disable_app_funtouch4
 		uninstall_app_funtouch4
@@ -438,8 +456,6 @@ remove_app_funtouch4(){
 remove_app_miui(){
 	if [ "$UID" == "0" ]
 	then
-		clear_app_miui
-		uninstall_app_miui
 		remove_sys_app_miui
 	else
 		disable_app_miui
@@ -450,8 +466,6 @@ remove_app_miui(){
 remove_app_rui(){
 	if [ "$UID" == "0" ]
 	then
-		clear_app_rui
-		uninstall_app_rui
 		remove_sys_app_rui
 	else
 		disable_app_rui
@@ -463,8 +477,6 @@ remove_app_rui(){
 remove_app_myui(){
 	if [ "$UID" == "0" ]
 	then
-		clear_app_myui
-		uninstall_app_myui
 		remove_sys_app_myui
 	else
 		disable_app_myui
@@ -475,8 +487,6 @@ remove_app_myui(){
 remove_app_flyme9(){
 	if [ "$UID" == "0" ]
 	then
-		clear_app_flyme9
-		uninstall_app_flyme9
 		remove_sys_app_flyme9
 	else
 		disable_app_flyme9
