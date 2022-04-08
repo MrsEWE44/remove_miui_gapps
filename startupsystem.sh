@@ -1,5 +1,6 @@
 #!/system/bin/sh
-clear
+OPTS="$1"
+OPTS2="$2"
 UID=$(id -g)
 SYSTEM_APP="/system/app"
 SYSTEM_PRIV_APP="/system/priv-app"
@@ -12,7 +13,6 @@ SYSTEM_EXT_APP="/system/system_ext/app"
 SYSTEM_EXT_PRIV_APP="/system/system_ext/priv-app"
 CUST_APP="/cust"
 
-echo "user : [$UID]"
 MIUI_APP_3=("com.duokan.reader" "com.miui.fmservice" "com.miui.fm" "com.miui.misound" "com.miui.player" "com.xiaomi.payment" "com.android.browser" "com.miui.cloudbackup" "com.xiaomi.finddevice" "com.miui.miservice" "com.miui.systemAdSolution" "com.miui.personalassistant" "com.android.quicksearchbox" "com.xiaomi.market" "com.miui.accessibility" "com.mipay.wallet" "com.miui.video" "com.xiaomi.ab" "com.xiaomi.mi_connect_service" "com.xiaomi.simactivate.service" "com.miui.cloudservice" "com.miui.voiceassist" "com.miui.backup" "com.miui.contentextension" "com.xiaomi.drivemode" "com.android.email" "com.xiaomi.gamecenter" "com.miui.smarttravel" "com.xiaomi.scanner" "com.mfashiongallery.emag" "com.miui.virtualsim" "com.miui.notes")
 
 RUI_APP_3=("com.coloros.backuprestore" "com.heytap.pictorial" "com.heytap.cloud" "com.finshell.wallet" "com.iflytek.speechsuite" "com.coloros.focusmode" "com.coloros.oshare" "com.coloros.assistantscreen" "com.coloros.activation" "com.android.printspooler" "com.coloros.smartdrive" "com.heytap.speechassist" "com.oppo.otaui" "com.coloros.translate.engine" "com.coloros.encryption" "com.android.backup" "com.coloros.note" "com.coloros.sceneservice" "com.coloros.personalassistant" "com.oppo.logkit" "com.coloros.securepay" "com.heytap.speechassist.engine" "com.coloros.directui" "com.heytap.browser" "com.nearme.atlas" "com.oppo.music" "com.coloros.video" "com.coloros.ocrscanner" "com.android.email" "com.coloros.childrenspace" "com.coloros.securitypermission" "com.coloros.remoteguardservice")
@@ -97,7 +97,7 @@ disable_app_core(){
 	for pp in ${arr[*]}
 	do
 		am force-stop $pp
-		pm clear $pp
+		pm disable $pp
 		pm disable-user $pp
 	done
 }
@@ -511,6 +511,53 @@ fix_rui_menu(){
 	fi
 }
 
+disable_app_miui_for_cmd(){
+	disable_app_core "${MIUI_13_PACKAGE[*]}"
+	disable_app_core "${MIUI_EU_APP[*]}"
+	disable_app_core "${MIUI_APP_3[*]}"
+}
+
+disable_app_myui_for_cmd(){
+	disable_app_core "${MYUI_PACKAGE[*]}"
+}
+
+disable_app_flyme_for_cmd(){
+	disable_app_core "${FLYME9_PACKAGE[*]}"
+}
+
+disable_app_color_for_cmd(){
+	disable_app_core "${RUI_APP_3[*]}"
+	disable_app_core "${RUI_SYS_APP_PACKAGENAME[*]}"
+}
+
+disable_app_vivo_for_cmd(){
+	disable_app_core "${FUNTOUCH_4_PACKAGE[*]}"
+}
+
+stop_app_miui_for_cmd(){
+	stop_app_core "${MIUI_13_PACKAGE[*]}"
+	stop_app_core "${MIUI_EU_APP[*]}"
+	stop_app_core "${MIUI_APP_3[*]}"
+}
+
+stop_app_myui_for_cmd(){
+	stop_app_core "${MYUI_PACKAGE[*]}"
+}
+
+stop_app_flyme_for_cmd(){
+	stop_app_core "${FLYME9_PACKAGE[*]}"
+}
+
+stop_app_color_for_cmd(){
+	stop_app_core "${RUI_APP_3[*]}"
+	stop_app_core "${RUI_SYS_APP_PACKAGENAME[*]}"
+}
+
+stop_app_vivo_for_cmd(){
+	stop_app_core "${FUNTOUCH_4_PACKAGE[*]}"
+}
+
+
 remove_app_menu(){
 	echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui(global)\n5.miui13\n6.funtouch4\n7.myui\n8.flyme9\n9.other\ninput : "
 	read xx
@@ -578,6 +625,8 @@ disable_app_menu(){
 }
 
 main(){
+	clear
+	echo "user : [$UID]"
 	echo -ne "1.remove app\n2.disable app\n3.fix app\ninput : "
 	read xxx
 	case $xxx in
@@ -593,4 +642,82 @@ main(){
 	*)main;;
 	esac
 }
-main
+
+case "$OPTS" in
+miui)
+	case "$OPTS2" in
+	r*)
+		remove_app_miui
+		remove_app_miui_eu
+		remove_app_miui_global
+		remove_app_miui13
+		exit 0;;
+	d*)
+		disable_app_miui_for_cmd
+		exit 0;;
+	*)
+		stop_app_miui_for_cmd
+		exit 0;;
+	esac
+	exit 0
+	;;
+flyme)
+	case "$OPTS2" in
+	r*)
+		remove_app_flyme9
+		exit 0;;
+	d*)
+		disable_app_flyme_for_cmd
+		exit 0;;
+	*)
+		stop_app_flyme_for_cmd
+		exit 0;;
+	esac
+	exit 0
+	;;
+color)
+	case "$OPTS2" in
+	r*)
+		remove_app_rui
+		exit 0;;
+	d*)
+		disable_app_color_for_cmd
+		exit 0;;
+	*)
+		stop_app_color_for_cmd
+		exit 0;;
+	esac
+	exit 0
+	;;
+vivo)
+	case "$OPTS2" in
+	r*)
+		remove_app_funtouch4
+		exit 0;;
+	d*)
+		disable_app_vivo_for_cmd
+		exit 0;;
+	*)
+		stop_app_vivo_for_cmd
+		exit 0;;
+	esac
+	exit 0
+	;;
+myui)
+	case "$OPTS2" in
+	r*)
+		remove_app_myui
+		exit 0;;
+	d*)
+		disable_app_myui_for_cmd
+		exit 0;;
+	*)
+		stop_app_myui_for_cmd
+		exit 0;;
+	esac
+	exit 0
+	;;
+*)
+	main
+	;;
+esac
