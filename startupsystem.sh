@@ -44,6 +44,11 @@ MIUI_13_VENDOR_APP=("Joyose")
 MIUI_13_VENDOR_DATA_APP=("BaiduME" "com.iflytek.inputmethod.miui" "SmartHome" "wps-lite" "XMRemoteController")
 MIUI_13_PACKAGE=("com.baidu.input_mi" "com.iflytek.inputmethod.miui" "com.xiaomi.smarthome" "cn.wps.moffice_eng.xiaomi.lite" "com.duokan.phone.remotecontroller" "com.xiaomi.aiasst_service" "com.duokan.reader" "com.android.backupconfirm" "com.miui.backup" "com.miui.cloudservice.sysbase" "com.android.bips" "com.xiaomi.finddevice" "com.xiaomi.mircs" "com.miui.miservice" "com.miui.contentextension" "com.miui.player" "com.miui.personalassistant" "com.miui.video" "com.miui.vipservice" "com.android.quicksearchbox" "com.android.browser" "com.xiaomi.gamecenter.sdk.service" "com.miui.cloudbackup" "com.xiaomi.shop" "com.miui.fm" "com.mipay.wallet" "com.mi.liveassistant" "com.mfashiongallery.emag" "com.xiaomi.jr" "com.miui.newmidrive" "com.mi.health" "com.miui.thirdappassistant" "com.xiaomi.youpin" "com.xiaomi.mibrain.speech" "com.miui.virtualsim" "com.xiaomi.vipaccount" "com.miui.smarttravel" "com.xiaomi.scanner" "com.miui.notes" "com.miui.newhome" "com.miui.huanji" "com.xiaomi.gamecenter" "com.android.email" "com.miui.hybrid" "com.miui.hybrid.accessory" "com.fido.xiaomi.uafclient" "com.fido.asm" "com.xiaomi.macro" "com.miui.cloudservice" "com.mi.AutoTest" "com.miui.analytics" "com.xiaomi.aiasst.vision" "com.miui.audiomonitor" "com.miui.accessibility" "com.xiaomi.mipay_client" "com.milink.service" "com.xiaomi.mi_connect_service" "com.miui.micloudsync" "com.xiaomi.ab" "com.xiaomi.joyose" "org.ifaa.aidl.manager" "com.xiaomi.market" "com.android.printspooler" "com.miui.greenguard" "com.miui.contentcatcher" "com.miui.bugreport" "com.miui.nextpay" "com.miui.systemAdSolution" "com.miui.tsmclient" "com.miui.translationservice" "com.xiaomi.payment" "com.android.updater" "com.miui.voicetrigger" "com.miui.voiceassist" "com.unionpay.tsmservice.mi" "com.miui.vsimcore" "com.miui.translation.youdao" "com.xiaomi.xmsfkeeper" "com.miui.translation.xmcloud" "com.xiaomi.account")
 
+MIUI_13_SYS_APP_LITE=("MiConnectService" "MiLink" "MINextPay" "MIUISuperMarket" "MSA" "MIUPTsmService" "PaymentService" "Updater" "VoiceAssist" "AiAsstVision" "AnalyticsCore" "AutoTest" "CloudService" "com.xiaomi.macro" "HybridAccessory" "HybridPlatform" "mab" "MiCloudSync")
+MIUI_13_SYS_DATA_APP_LITE=("Health" "MiDrive" "MIGalleryLockscreen" "MIpay" "MIRadio" "MIShop" "MIUIDuokanReader" "MIUIEmail" "MIUIGameCenter" "MIUIHuanji" "MIUINewHome" "MIUIScanner" "MIUIVirtualSim" "MIUIXiaoAiSpeechEngine" "XiaoAiSpeechEngine" "MIUIYoupin" "SmartHome" "ThirdAppAssistant" "wps-lite" "XMRemoteController")
+MIUI_13_SYS_PRIV_APP_LITE=("Backup" "BackupRestoreConfirmation" "CloudBackup" "MiGameCenterSDKService" "MiRcs" "MIService" "MIUIBrowser" "MIUIContentExtension" "MIUIMusic" "MIUIPackageInstaller" "MIUIPersonalAssistant" "MIUIQuickSearchBox" "MIUIVideo" "MIUIVipService" "SarController")
+MIUI_13_PACKAGE_LITE=("com.miui.backup" "com.android.backupconfirm" "com.miui.cloudbackup" "com.xiaomi.gamecenter.sdk.service" "com.miui.miservice" "com.miui.contentextension" "com.miui.player" "com.miui.packageinstaller" "com.android.quicksearchbox" "com.miui.video" "com.miui.vipservice" "com.huaqin.sarcontroller" "com.miui.personalassistant" "com.android.browser" "com.xiaomi.mircs" "com.mfashiongallery.emag" "com.unionpay.tsmservice.mi" "com.miui.fm" "com.xiaomi.shop" "com.duokan.reader" "com.android.email" "com.xiaomi.gamecenter" "com.miui.huanji" "com.miui.newhome" "com.xiaomi.mibrain.speech" "com.xiaomi.smarthome" "cn.wps.moffice_eng.xiaomi.lite" "com.duokan.phone.remotecontroller" "com.miui.thirdappassistant" "com.xiaomi.youpin" "com.xiaomi.scanner" "com.miui.virtualsim" "com.mipay.wallet" "com.android.updater" "com.miui.voiceassist" "com.mi.health" "com.miui.newmidrive" "com.milink.service" "com.miui.nextpay" "com.xiaomi.market" "com.miui.systemAdSolution" "com.xiaomi.payment" "com.miui.hybrid" "com.xiaomi.ab" "com.miui.micloudsync" "com.xiaomi.mi_connect_service" "com.xiaomi.macro" "com.miui.cloudservice" "com.miui.hybrid.accessory" "com.mi.AutoTest" "com.xiaomi.aiasst.vision" "com.miui.analytics")
+
 MIUI_EU_SYS_APP=("BookmarkProvider" "CloudService" "com.xiaomi.macro"  "GooglePrintRecommendationService" "Email" "Health" "Joyose" "Lens" "LiveWallpapersPicker" "mi_connect_service" "MiuiBugReport" "MiCloudSync" "MiDrive" "MiGalleryLockscreen" "MiLinkService" "MiPlayClient" "MiRadio" "MiuiVideoGlobal" "NextPay" "Notes" "PaymentService" "PrintSpooler"  "Updater" "XiaomiAccount" "wps-lite" "XMSFKeeper")
 MIUI_EU_SYS_PRIV_APP=("Backup" "BackupRestoreConfirmation" "BuiltlnPrintService" "CloudBackup" "CloudServiceSysbase" "DownloadProvider" "DownloadProviderUi" "FindDevice" "MiBrowserGlobal" "MiMover" "MiService" "MiuiScanner" "Music" "MusicFX" "PersonalAssistant" "QuickSearchBox")
 MIUI_EU_SYS_PRODUCT_APP=("GoogleCalendarSyncAdapter" "GoogleContactsSyncAdapter" "GoogleLocationHistory" "GoogleTTS")
@@ -155,6 +160,17 @@ remove_sys_app_miui13(){
 	remove_sys_app_core "$SYSTEM_VENDOR_APP" "${MIUI_13_VENDOR_APP[*]}"
 	remove_sys_app_core "$SYSTEM_VENDOR_DATA_APP" "${MIUI_13_VENDOR_DATA_APP[*]}"
 	uninstall_app_miui13
+	mount_ro_sys
+	remove_cust_app
+	remove_app_3
+}
+
+remove_sys_app_miui13_lite(){
+	mount_rw_sys
+	remove_sys_app_core "$SYSTEM_APP" "${MIUI_13_SYS_APP_LITE[*]}"
+	remove_sys_app_core "$SYSTEM_PRIV_APP" "${MIUI_13_SYS_PRIV_APP_LITE[*]}"
+	remove_sys_app_core "$SYSTEM_DATA_APP" "${MIUI_13_SYS_DATA_APP_LITE[*]}"
+	uninstall_app_miui13_lite
 	mount_ro_sys
 	remove_cust_app
 	remove_app_3
@@ -342,9 +358,20 @@ stop_app_miui13(){
 	stop_app_3
 	stop_app_core "${MIUI_13_PACKAGE[*]}"
 }
+
+stop_app_miui13_lite(){
+	stop_app_3
+	stop_app_core "${MIUI_13_PACKAGE_LITE[*]}"
+}
+
 clear_app_miui13(){
 	stop_app_miui13
 	clear_app_core "${MIUI_13_PACKAGE[*]}"
+}
+
+clear_app_miui13_lite(){
+	stop_app_miui13_lite
+	clear_app_core "${MIUI_13_PACKAGE_LITE[*]}"
 }
 
 disable_app_miui13(){
@@ -352,10 +379,21 @@ disable_app_miui13(){
 	disable_app_core "${MIUI_13_PACKAGE[*]}"
 }
 
+disable_app_miui13_lite(){
+	clear_app_miui13_lite
+	disable_app_core "${MIUI_13_PACKAGE_LITE[*]}"
+}
+
 uninstall_app_miui13(){
 	clear_app_miui13
 	uninstall_app_core "${MIUI_13_PACKAGE[*]}"
 }
+
+uninstall_app_miui13_lite(){
+	clear_app_miui13_lite
+	uninstall_app_core "${MIUI_13_PACKAGE_LITE[*]}"
+}
+
 
 uninstall_app_funtouch4(){
 	clear_app_funtouch4
@@ -442,6 +480,15 @@ remove_app_miui13(){
 	fi
 }
 
+remove_app_miui13_lite(){
+	if [ "$UID" == "0" ]
+	then
+		remove_sys_app_miui13_lite
+	else
+		disable_app_miui13_lite
+		uninstall_app_miui13_lite
+	fi
+}
 
 remove_app_funtouch4(){
 	if [ "$UID" == "0" ]
@@ -559,7 +606,7 @@ stop_app_vivo_for_cmd(){
 
 
 remove_app_menu(){
-	echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui(global)\n5.miui13\n6.funtouch4\n7.myui\n8.flyme9\n9.other\ninput : "
+	echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui(global)\n5.miui13\n6.miui13_lite\n7.funtouch4\n8.myui\n9.flyme9\n10.other\ninput : "
 	read xx
 	case $xx in
 	1)
@@ -578,22 +625,25 @@ remove_app_menu(){
 		remove_app_miui13
 		exit 0;;
 	6)
-		remove_app_funtouch4
+		remove_app_miui13_lite
 		exit 0;;
 	7)
-		remove_app_myui
+		remove_app_funtouch4
 		exit 0;;
 	8)
-		remove_app_flyme9
+		remove_app_myui
 		exit 0;;
 	9)
+		remove_app_flyme9
+		exit 0;;
+	10)
 		remove_app_3
 		exit 0;;
 	*)remove_app_menu;;
 	esac
 }
 disable_app_menu(){
-	echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui13\n5.funtouch4\n6.myui\n7.flyme9\n8.other\ninput : "
+	echo -ne "1.miui\n2.color(realmeui)\n3.miui(eu)\n4.miui13\n5.miui13_lite\n6.funtouch4\n7.myui\n8.flyme9\n9.other\ninput : "
 	read xx2
 	case $xx2 in
 	1)
@@ -609,15 +659,18 @@ disable_app_menu(){
 		disable_app_miui13
 		exit 0;;
 	5)
-		disable_app_funtouch4
+		disable_app_miui13_lite
 		exit 0;;
 	6)
-		disable_app_myui
+		disable_app_funtouch4
 		exit 0;;
 	7)
-		disable_app_flyme9
+		disable_app_myui
 		exit 0;;
 	8)
+		disable_app_flyme9
+		exit 0;;
+	9)
 		stop_app_3
 		exit 0;;
 	*)stop_app_menu;;
@@ -651,6 +704,7 @@ miui)
 		remove_app_miui_eu
 		remove_app_miui_global
 		remove_app_miui13
+		remove_app_miui13_lite
 		exit 0;;
 	d*)
 		disable_app_miui_for_cmd
